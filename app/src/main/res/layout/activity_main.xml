@@ -28,10 +28,13 @@
             android:background="@drawable/red_border_round_rect"
             android:layout_weight="1" />
 
-        <Button
+        <TextView
             android:layout_width="0dp"
             android:text="싫어요"
             android:layout_marginLeft="5dp"
+            android:clickable="true"
+            android:padding="10dp"
+            android:gravity="center"
             android:layout_height="wrap_content"
             android:layout_weight="1" />
 
