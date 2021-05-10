@@ -3,6 +3,7 @@ package com.neppplus.drawablexmlpractice_genie
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.appcompat.app.ActionBar
+import androidx.appcompat.widget.Toolbar
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -17,6 +18,10 @@ class MainActivity : AppCompatActivity() {
 
 //        실제로 어떤 커스텀뷰를 사용할건지?
         defaultActionBar.setCustomView(R.layout.my_custom_actionbar)
+
+//        커스텀뷰를 들고 있는 툴바를 변수에 저장.
+        val toolbar = defaultActionBar.customView.parent as Toolbar
+        toolbar.setContentInsetsAbsolute(0, 0)
 
     }
 }
